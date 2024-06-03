@@ -1,0 +1,80 @@
+body {
+  background: rgb(179, 208, 208);
+  font-family: "Arial";
+}
+body #root .Movies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body #root .Movies .headerText {
+  padding-left: 30px;
+  color: white;
+  background: black;
+  border: 1px solid white;
+  margin-bottom: 10px;
+}
+body #root .Movies .stuffs {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body #root .Movies .stuffs .Card {
+  height: 250px;
+  width: 150px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-inline: 30px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: azure;
+}
+body #root .Movies .stuffs .Card h1 {
+  font-size: 14px;
+  padding-inline: 5px;
+  margin-top: 120px;
+}
+body #root .Movies .stuffs .Card .wrapper {
+  width: 150px;
+  height: 90px;
+}
+body #root .Movies .stuffs .Card .wrapper img {
+  width: 150px;
+  height: 200px;
+
+  object-fit: cover;
+}
+body #root .Movies .stuffs .Card p {
+  margin-top: 5px;
+  padding-inline: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+body #root .Movies .stuffs .Card p span {
+  color: #5f5fe3;
+}
+
+.input-field{
+  padding: 40px 0 40px 0;
+}
+
+.validate
+{
+  width: 800px;
+  height: 40px;
+  background: blueviolet;
+  color: white;
+  margin-left: 60px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.search-btn
+{
+  width: 100px;
+  height: 40px;
+  background: black;
+  color: white;
+}
