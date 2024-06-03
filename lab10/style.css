@@ -1,0 +1,101 @@
+:root
+{
+    --thimble-width: 0;
+}
+*{
+    margin: 0;
+}
+form>div
+{
+    display: flex;
+    gap:20%;
+}
+.parameter
+{
+    width:20%;
+}
+.game
+{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+    user-select: none;
+    width: 100%;
+}
+
+.thimbles
+{
+    width: calc(var(--thimble-width) * 3 + 200px);
+    position: absolute;
+    justify-content: center;
+    margin-top: 10vh;
+    display: flex;
+    gap: 100px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+
+
+img[alt="thimble"]
+{
+    display: block;
+    z-index: 1;
+}
+.ball {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.upDownAnimationClass {
+    animation: upDownAnimation 3s ease-in-out;
+}
+
+@keyframes upDownAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.upAnimationClass
+{
+    transition: all 1.5s ease-in-out;
+    transform: translateY(-200px);
+}
+.downAnimationClass
+{
+    transform: translateY(0px);
+}
+
+.thimble{
+    display: block;
+}
+
+.thimble_element
+{
+    transition: all 2.5s ease-in-out;
+    position: relative;
+}
+
+.first , .third
+{
+    display: none;
+}
+
+#resultText
+{
+    text-align: center;
+    font-size: 24px;
+    color: red;
+}

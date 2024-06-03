@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа №9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form method="get">
+    <div>
+        <div>
+            <p>Высота наперстка <input type="number" name="height" class="parameter" value="164"></p>
+            <p>Ширина наперстка <input type="number" class="parameter" name="width" value="176"></p>
+            <p>Диаметр шарика <input type="number" name="diameter" class="parameter" value="64"></p>
+        </div>
+
+        <div>
+            <p>Результат <input type="text" class="parameter" name="result" value="0" readonly></p>
+        </div>
+    </div>
+
+</form>
+    <p id="resultText"></p>
+    <div class="game">
+        <div class="thimbles">
+            <div class="thimble_element" about="first">
+                <img src="gallery/thimble.png" alt="thimble" class="thimble" >
+                <img src="gallery/ball.png" alt="ball" class="ball first">
+            </div>
+            <div class="thimble_element" about="second">
+                <img src="gallery/thimble.png" alt="thimble" class="thimble">
+                <img src="gallery/ball.png" alt="ball" class="ball second">
+            </div>
+            <div class="thimble_element" about="third">
+                <img src="gallery/thimble.png" alt="thimble" class="thimble" >
+                <img src="gallery/ball.png" alt="ball" class="ball third">
+            </div>
+        </div>
+    </div>
+
+
+    <button id="btn-update">Обновить</button>
+</body>
+<script src="src.js"></script>
+</html>
