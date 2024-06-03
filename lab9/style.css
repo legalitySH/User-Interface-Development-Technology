@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form
+{
+    padding: 1.2vh;
+    width: 30%;
+    margin-left: 40%;
+    margin-top: 10%;
+    border: 1px solid gray;
+}
+
+.text_input
+{
+    width: 12vw;
+    height: 3vh;
+}
+.form_row
+{
+    margin-top: 4vh;
+    display: flex;
+    gap: 1.2vh;
+}
+
+.form_first_column
+{
+    width: 15vw;
+}
+
+.error
+{
+    display: none;
+}
+.success
+{
+    color : #009000;
+    display: none;
+}
+

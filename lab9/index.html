@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>lab_8</title>
+</head>
+<body>
+<h2 style="text-align: center">Лабораторная работа 8</h2>
+<form action="" method="post" id="form">
+    <h3>Заполните форму:</h3>
+    <p class="success">Данные успешно отправлены на сервер</p>
+    <div class="form_row">
+        <div class="form_first_column">
+            <p class="criterion">Фамилия</p>
+            <p class="error err_1" style="color:red">Размер поля не должен превышать 20 символов</p>
+            <p class="error err_2" style="color:red">Поле должно содержать только символы русского и английского алфавита</p>
+            <p class="error err_10" style="color:red">Поле не должно быть пустым!</p>
+
+        </div>
+        <div class="form_second_column">
+            <input type="text" name="second_name"  class="text_input">
+        </div>
+    </div>
+
+    <div class="form_row">
+        <div class="form_first_column">
+            <p class="criterion">Имя</p>
+            <p class="error err_3" style="color:red">Размер поля не должен превышать 20 символов</p>
+            <p class="error err_4" style="color:red">Поле должно содержать только символы русского и английского алфавита.</p>
+            <p class="error err_11" style="color:red">Поле не должно быть пустым!</p>
+        </div>
+        <div class="form_second_column">
+            <input type="text" name="name" class="text_input">
+        </div>
+    </div>
+
+    <div class="form_row">
+        <div class="form_first_column">
+            <p class="criterion">Email</p>
+            <p class="error err_5" style="color:red">Поле не должно содержать пробелы</p>
+            <p class="error err_6" style="color:red">После знака “@” допускается от 2 до 5 символов английского алфавита, после “.” – от 2 до 3. Допустимый формат доменного имени “@ххххх.ххх”</p>
+            <p class="error err_12" style="color:red">Поле не должно быть пустым!</p>
+        </div>
+        <div class="form_second_column">
+            <input type="email" name="mail" class="text_input">
+        </div>
+    </div>
+
+    <div class="form_row">
+        <div class="form_first_column">
+            <p class="criterion">Телефон (0xx)xxx-xx-xxx</p>
+            <p class="error err_7" style="color:red">Поле должно содержать только цифры и  символы “(”, “)”, “-”</p>
+            <p class="error err_8" style="color:red">Допустимый формат поля “(0хх)ххх-хх-хх”.</p>
+            <p class="error err_13" style="color:red">Поле не должно быть пустым!</p>
+
+
+        </div>
+        <div class="form_second_column">
+            <input type="tel" name="telephone" class="text_input">
+        </div>
+    </div>
+
+    <div class="form_row">
+        <div class="form_first_column">
+            <p class="criterion">Город</p>
+            <p class="error err_14" style="color:red">Недопустимое значение города!</p>
+        </div>
+        <div class="form_second_column">
+            <select name="town" id="" class="select_input">
+                <option value="Минск">Минск</option>
+                <option value="Брест">Брест</option>
+                <option value="Могилев">Могилев</option>
+                <option value="Витебск">Витебск</option>
+                <option value="Гомель">Гомель</option>
+                <option value="Гродно">Гродно</option>
+
+            </select>
+        </div>
+    </div>
+
+    <div class="form_row">
+        <div class="form_first_column">
+            <p class="criterion">Я учусь в БГТУ</p>
+        </div>
+        <div class="form_second_column">
+            <input type="checkbox" name="isStudent" id="">
+        </div>
+    </div>
+
+    <div class="form_row">
+        <div class="form_first_column">
+            <p class="criterion">На каком курсе вы учитесь?</p>
+        </div>
+        <div class="form_second_column">
+            <span><input type="radio" name="course" id="" value="1"> 1 </span>
+            <span><input type="radio" name="course" id="" value="2"> 2 </span>
+            <span><input type="radio" name="course" id="" value="3"> 3 </span>
+            <span><input type="radio" name="course" id="" value="4"> 4 </span>
+        </div>
+    </div>
+
+    <div class="form_row">
+        <div class="form_first_column">
+            <p class="criterion">Расскажите о себе</p>
+            <p class="error err_9" style="color:red">Размер поля не должен превышать 250 символов</p>
+            <p class="error err_15" style="color:red">Поле не должно быть пустым!</p>
+        </div>
+        <div class="form_second_column">
+            <textarea name="about" id="" cols="30" rows="5"></textarea>
+        </div>
+    </div>
+
+    <button type="submit">Проверить</button>
+
+</form>
+
+</body>
+
+<script src="src.js"></script>
+</html>
