@@ -1,0 +1,17 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 216px);
+    justify-content: center;
+    align-content: center;
+}
+
+.board-row {
+    display: flex;
+    justify-content: center;
+}
+
+.structural-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
