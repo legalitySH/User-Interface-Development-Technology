@@ -1,0 +1,44 @@
+*{
+    background: #a09999;
+}
+
+.title
+{
+    font-size: 30pt;
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: Bahnschrift,serif;
+    color: #383434;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cell
+{
+    height: 70px;
+    width: 70px;
+    text-align: center;
+
+    font-family: "Bahnschrift",serif;
+    font-size: 25pt;
+    color: white;
+    padding: 0;
+
+    background: rgb(40,40,40);
+    border: 1px solid white;
+
+}
+
+.invalid
+{
+    background: #a44141;
+}
+
+.complete
+{
+    background: #235b20;
+}
